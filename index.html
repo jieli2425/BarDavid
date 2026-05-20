@@ -76,6 +76,7 @@ h2 {
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   text-align: center;
   transition: transform 0.2s;
+  position: relative;
 }
 
 .item:hover {
@@ -97,6 +98,18 @@ h2 {
   color: green;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.top {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: orange;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 /* FOOTER */
@@ -164,112 +177,134 @@ footer {
 <div class="container">
 
   <!-- BOCADILLOS -->
-  <section id="bocadillos">
-    <h2>🥪 Bocadillos Fríos</h2>
-    <div class="menu">
+<section id="bocadillos">
 
-      <div class="item">
-        <img src="img/jamon.jpg">
-        <h3>Jamón Serrano</h3>
-        <p class="precio">4.50€</p>
-      </div>
-      <div class="item">
-        <img src="img/jamon.jpg">
-        <h3>Queso</h3>
-        <p class="precio">4.50€</p>
-      </div>
-      <div class="item">
-        <img src="img/jamon.jpg">
-        <h3>Fuet</h3>
-        <p class="precio">4.00€</p>
-      </div>
-      <div class="item">
-        <img src="img/jamon.jpg">
-        <h3>Atun</h3>
-        <p class="precio">4.50€</p>
-      </div>
-      <div class="item">
-        <img src="img/jamon.jpg">
-        <h3>Chorizo</h3>
-        <p class="precio">4.50€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Butifarra Blanca</h3>
-        <p class="precio">4.50€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Anchoas</h3>
-        <p class="precio">4.50€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Vegetal Atun</h3>
-        <p class="precio">4.50€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Vegetal Pollo</h3>
-        <p class="precio">4.50€</p>
-      </div>
+  <!-- FRÍOS -->
+  <h2>🥪 Bocadillos Fríos</h2>
 
-      <br><br><br><br>
+  <div class="menu">
 
-      <h2>🔥 Bocadillos Calientes</h2>
+    <div class="item">
+      <img src="img/jamon.jpg">
+      <h3>Jamón Serrano</h3>
+      <p class="precio">4.50€</p>
+    </div>
 
-      <div class="item">
-        <img src="img/">
-        <h3>Lomo</h3>
-        <p class="precio">4.00€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Lomo con queso</h3>
-        <p class="precio">4.80€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Beicon</h3>
-        <p class="precio">4.00€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Beicon con Queso</h3>
-        <p class="precio">4.80€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Tortilla Francesa</h3>
-        <p class="precio">3.80€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Frankfurt</h3>
-        <p class="precio">4.00€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Salchicas del pais</h3>
-        <p class="precio">4.50€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Tortilla Patatas</h3>
-        <p class="precio">4.00€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Pechuga Pollo</h3>
-        <p class="precio">4.00€</p>
-      </div>
-      <div class="item">
-        <img src="img/">
-        <h3>Sobresada </h3>
-        <p class="precio">4.50€</p>
-      </div>
-      </div>
-  </section>
+    <div class="item">
+      <img src="img/queso.jpg">
+      <h3>Queso</h3>
+      <p class="precio">4.50€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/fuet.jpg">
+      <h3>Fuet</h3>
+      <p class="precio">4.00€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/atun.jpg">
+      <h3>Atún</h3>
+      <p class="precio">4.50€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/chorizo.jpg">
+      <h3>Chorizo</h3>
+      <p class="precio">4.50€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/anchoas.jpg">
+      <h3>Anchoas</h3>
+      <p class="precio">4.50€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/vegetal_atun.jpg">
+      <h3>Vegetal Atún</h3>
+      <p class="precio">4.50€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/vegetal_pollo.jpg">
+      <h3>Vegetal Pollo</h3>
+      <p class="precio">4.50€</p>
+    </div>
+
+  </div>
+
+  <!-- CALIENTES -->
+  <h2 style="margin-top:50px;">🔥 Bocadillos Calientes</h2>
+
+  <div class="menu">
+
+    <div class="item">
+      <img src="img/lomo.jpg">
+      <h3>Lomo</h3>
+      <p class="precio">4.00€</p>
+    </div>
+
+    <div class="item">
+      <span class="top">⭐ Muy pedido</span>
+      <img src="img/lomo_queso.jpg">
+      <h3>Lomo con Queso</h3>
+      <p class="precio">4.80€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/beicon.jpg">
+      <h3>Beicon</h3>
+      <p class="precio">4.00€</p>
+    </div>
+
+    <div class="item">
+      <span class="top">⭐ Muy pedido</span>
+      <img src="img/beicon_queso.jpg">
+      <h3>Beicon con Queso</h3>
+      <p class="precio">4.80€</p>
+    </div>
+
+    <div class="item">
+      <span class="top">⭐ Muy pedido</span>
+      <img src="img/francesa.jpg">
+      <h3>Tortilla Francesa</h3>
+      <p class="precio">3.80€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/frankfurt.jpg">
+      <h3>Frankfurt</h3>
+      <p class="precio">4.00€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/butifarra.jpg">
+      <h3>Salchichas del País</h3>
+      <p class="precio">4.50€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/tortilla_patatas.jpg">
+      <h3>Tortilla Patatas</h3>
+      <p class="precio">4.00€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/pollo.jpg">
+      <h3>Pechuga Pollo</h3>
+      <p class="precio">4.00€</p>
+    </div>
+
+    <div class="item">
+      <img src="img/sobrasada.jpg">
+      <h3>Sobrasada</h3>
+      <p class="precio">4.50€</p>
+    </div>
+
+  </div>
+
+</section>
 
 
   <!-- TAPAS -->
